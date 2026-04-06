@@ -1,0 +1,35 @@
+[
+  {
+    "mood": "happy",
+    "confidence": 1.0,
+    "timestamp": 1775360924.7083116,
+    "duration": 0.0,
+    "triggers": [],
+    "reason": "非常开心",
+    "conversation_id": null,
+    "manager_version": "1.0",
+    "date": "2026-04-05T11:48:44.708312"
+  },
+  {
+    "mood": "happy",
+    "confidence": 0.5,
+    "timestamp": 1775360945.7266405,
+    "duration": 0.0,
+    "triggers": [],
+    "reason": "有一定开心倾向",
+    "conversation_id": null,
+    "manager_version": "1.0",
+    "date": "2026-04-05T11:49:05.726642"
+  },
+  {
+    "mood": "happy",
+    "confidence": 0.6666666666666666,
+    "timestamp": 1775360971.9051046,
+    "duration": 0.0,
+    "triggers": [],
+    "reason": "比较开心",
+    "conversation_id": null,
+    "manager_version": "1.0",
+    "date": "2026-04-05T11:49:31.905106"
+  }
+]

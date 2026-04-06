@@ -1,0 +1,38 @@
+2026-04-05 11:34:53 [[31m❌ ERROR   [0m] test_logger: [31m除法错误 | error=division by zero[0m
+2026-04-05 11:34:53 [[31m❌ ERROR   [0m] test_logger: [31m快捷错误函数 | exception_type=ZeroDivisionError[0m
+2026-04-05 11:34:54 [[31m❌ ERROR   [0m] test_logger: [31m操作失败: 危险操作 [E0001] division by zero[0m
+2026-04-05 11:34:54 [[31m❌ ERROR   [0m] test_logger: [31m操作失败: 安全操作 [E0001] division by zero[0m
+2026-04-05 11:34:54 [[31m❌ ERROR   [0m] test_logger: [31m操作失败: 装饰器测试 [E0001] 装饰器测试错误[0m
+2026-04-05 11:45:30 [[31m❌ ERROR   [0m] ai_pet: [31m应用程序启动失败: No module named 'psutil'[0m
+Traceback (most recent call last):
+  File "D:\AI_Pet\ai_pet_mvp\run_app.py", line 50, in main
+    logger.log_system_info()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\AI_Pet\ai_pet_mvp\src\utils\logger.py", line 175, in log_system_info
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2026-04-05 11:45:30 [[31m[1m💥 CRITICAL[0m] ai_pet: [31m[1m致命错误:
+Traceback (most recent call last):
+  File "D:\AI_Pet\ai_pet_mvp\run_app.py", line 50, in main
+    logger.log_system_info()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\AI_Pet\ai_pet_mvp\src\utils\logger.py", line 175, in log_system_info
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+[0m
+2026-04-05 11:50:10 [[31m[1m💥 CRITICAL[0m] ai_pet: [31m[1m未捕获的异常: AttributeError | error='MoodManager' object has no attribute 'save_current_mood' traceback=Traceback (most recent call last):
+  File "D:\AI_Pet\ai_pet_mvp\run_app.py", line 250, in on_app_exit
+    mood_manager.save_current_mood()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MoodManager' object has no attribute 'save_current_mood'. Did you mean: 'current_mood'?
+[0m
+2026-04-05 12:03:46 [[31m[1m💥 CRITICAL[0m] ai_pet: [31m[1m未捕获的异常: AttributeError | error='MoodManager' object has no attribute 'save_current_mood' traceback=Traceback (most recent call last):
+  File "D:\AI_Pet\ai_pet_mvp\run_app.py", line 250, in on_app_exit
+    mood_manager.save_current_mood()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MoodManager' object has no attribute 'save_current_mood'. Did you mean: 'current_mood'?
+[0m
+2026-04-05 22:23:54 [[31m❌ ERROR   [0m] test_runner: [31m❌ 测试失败[0m
+2026-04-05 22:29:25 [[31m❌ ERROR   [0m] test_runner: [31m❌ 测试失败[0m
+2026-04-05 22:30:45 [[31m❌ ERROR   [0m] test_runner: [31m❌ 测试失败[0m
+2026-04-05 22:35:27 [[31m❌ ERROR   [0m] test_runner: [31m❌ 测试失败[0m

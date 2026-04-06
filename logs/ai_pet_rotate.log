@@ -1,0 +1,186 @@
+2026-04-05 11:34:53 [[32mℹ️ INFO    [0m] test_logger: [32m普通信息 - 程序正常运行[0m
+2026-04-05 11:34:53 [[33m⚠️ WARNING [0m] test_logger: [33m警告信息 - 需要注意的问题[0m
+2026-04-05 11:34:53 [[32mℹ️ INFO    [0m] test_logger: [32m快捷信息函数 | user=test action=logging[0m
+2026-04-05 11:34:53 [[33m⚠️ WARNING [0m] test_logger: [33m快捷警告函数 | code=1001[0m
+2026-04-05 11:34:53 [[31m❌ ERROR   [0m] test_logger: [31m除法错误 | error=division by zero[0m
+2026-04-05 11:34:53 [[31m❌ ERROR   [0m] test_logger: [31m快捷错误函数 | exception_type=ZeroDivisionError[0m
+2026-04-05 11:34:54 [[31m❌ ERROR   [0m] test_logger: [31m操作失败: 危险操作 [E0001] division by zero[0m
+2026-04-05 11:34:54 [[31m❌ ERROR   [0m] test_logger: [31m操作失败: 安全操作 [E0001] division by zero[0m
+2026-04-05 11:34:54 [[33m⚠️ WARNING [0m] test_logger: [33m安全执行返回默认值: 默认值[0m
+2026-04-05 11:34:54 [[31m❌ ERROR   [0m] test_logger: [31m操作失败: 装饰器测试 [E0001] 装饰器测试错误[0m
+2026-04-05 11:34:54 [[33m⚠️ WARNING [0m] test_logger: [33m安全执行返回默认值: 装饰器默认值[0m
+2026-04-05 11:34:54 [[32mℹ️ INFO    [0m] test_logger: [32m工具链组合测试开始[0m
+2026-04-05 11:34:54 [[32mℹ️ INFO    [0m] test_logger: [32m测试结果: 组合测试结果[0m
+2026-04-05 11:45:30 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 11:45:30 [[32mℹ️ INFO    [0m] ai_pet: [32m🚀 启动AI宠物MVP完整应用程序[0m
+2026-04-05 11:45:30 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 11:45:30 [[31m❌ ERROR   [0m] ai_pet: [31m应用程序启动失败: No module named 'psutil'[0m
+Traceback (most recent call last):
+  File "D:\AI_Pet\ai_pet_mvp\run_app.py", line 50, in main
+    logger.log_system_info()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\AI_Pet\ai_pet_mvp\src\utils\logger.py", line 175, in log_system_info
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2026-04-05 11:45:30 [[31m[1m💥 CRITICAL[0m] ai_pet: [31m[1m致命错误:
+Traceback (most recent call last):
+  File "D:\AI_Pet\ai_pet_mvp\run_app.py", line 50, in main
+    logger.log_system_info()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\AI_Pet\ai_pet_mvp\src\utils\logger.py", line 175, in log_system_info
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m🚀 启动AI宠物MVP完整应用程序[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m系统信息 | 系统=Windows 版本=10.0.26200 处理器=Intel64 Family 6 Model 154 Stepping 4, GenuineIntel Python版本=3.14.3 内存总量(GB)=15.72 内存可用(GB)=3.96 CPU核心数=10 逻辑CPU数=12[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 模块导入成功[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 创建Qt应用[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 加载配置管理器[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m读取AI配置...[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 使用AI配置: 我的Ollama[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m   IP: 192.168.1.13[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m   端口: 11434[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m   模型: my-qwen:latest[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m创建AI管理器...[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ AI管理器创建完成[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m创建记忆存储系统...[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 记忆存储系统创建完成[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m创建心情系统...[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 心情图片管理器创建完成[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 心情管理器创建完成[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 心情回调注册完成[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m创建聊天管理器...[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 聊天管理器创建完成[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m创建主窗口...[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 主窗口创建完成[0m
+2026-04-05 11:46:58 [[32mℹ️ INFO    [0m] ai_pet: [32m连接信号...[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 窗口显示完成[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m异步连接AI...[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m🎉 应用程序启动完成！[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m📝 功能说明:[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m   1. 左侧: 聊天对话区域[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m   2. 右侧: AI宠物心情显示[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m   3. 输入消息，点击发送或按 Ctrl+Enter[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m   4. 心情会根据对话内容变化[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m   5. 所有对话自动保存[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m💡 提示: AI连接可能需要几秒钟时间[0m
+2026-04-05 11:46:59 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 11:47:00 [[32mℹ️ INFO    [0m] ai_pet: [32m尝试连接AI...[0m
+2026-04-05 11:47:00 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ AI连接成功[0m
+2026-04-05 11:48:44 [[32mℹ️ INFO    [0m] ai_pet: [32m🎭 心情变化: neutral -> happy[0m
+2026-04-05 11:48:44 [[32mℹ️ INFO    [0m] ai_pet: [32m   原因: 非常开心[0m
+2026-04-05 11:48:44 [[32mℹ️ INFO    [0m] ai_pet: [32m   置信度: 100.0%[0m
+2026-04-05 11:49:05 [[32mℹ️ INFO    [0m] ai_pet: [32m🎭 心情变化: happy -> happy[0m
+2026-04-05 11:49:05 [[32mℹ️ INFO    [0m] ai_pet: [32m   原因: 有一定开心倾向[0m
+2026-04-05 11:49:05 [[32mℹ️ INFO    [0m] ai_pet: [32m   置信度: 50.0%[0m
+2026-04-05 11:49:31 [[32mℹ️ INFO    [0m] ai_pet: [32m🎭 心情变化: happy -> happy[0m
+2026-04-05 11:49:31 [[32mℹ️ INFO    [0m] ai_pet: [32m   原因: 比较开心[0m
+2026-04-05 11:49:31 [[32mℹ️ INFO    [0m] ai_pet: [32m   置信度: 66.7%[0m
+2026-04-05 11:50:10 [[32mℹ️ INFO    [0m] ai_pet: [32m🛑 应用程序正在关闭...[0m
+2026-04-05 11:50:10 [[31m[1m💥 CRITICAL[0m] ai_pet: [31m[1m未捕获的异常: AttributeError | error='MoodManager' object has no attribute 'save_current_mood' traceback=Traceback (most recent call last):
+  File "D:\AI_Pet\ai_pet_mvp\run_app.py", line 250, in on_app_exit
+    mood_manager.save_current_mood()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MoodManager' object has no attribute 'save_current_mood'. Did you mean: 'current_mood'?
+[0m
+2026-04-05 11:50:10 [[32mℹ️ INFO    [0m] ai_pet: [32m应用程序退出，返回码: 0[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m🚀 启动AI宠物MVP完整应用程序[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m系统信息 | 系统=Windows 版本=10.0.26200 处理器=Intel64 Family 6 Model 154 Stepping 4, GenuineIntel Python版本=3.14.3 内存总量(GB)=15.72 内存可用(GB)=3.98 CPU核心数=10 逻辑CPU数=12[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 模块导入成功[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 创建Qt应用[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 加载配置管理器[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m读取AI配置...[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 使用AI配置: 我的Ollama[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m   IP: 192.168.1.13[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m   端口: 11434[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m   模型: my-qwen:latest[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m创建AI管理器...[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ AI管理器创建完成[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m创建记忆存储系统...[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 记忆存储系统创建完成[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m创建心情系统...[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 心情图片管理器创建完成[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 心情管理器创建完成[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 心情回调注册完成[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m创建聊天管理器...[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 聊天管理器创建完成[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m创建主窗口...[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 主窗口创建完成[0m
+2026-04-05 12:03:29 [[32mℹ️ INFO    [0m] ai_pet: [32m连接信号...[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ 窗口显示完成[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m异步连接AI...[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m🎉 应用程序启动完成！[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m📝 功能说明:[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m   1. 左侧: 聊天对话区域[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m   2. 右侧: AI宠物心情显示[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m   3. 输入消息，点击发送或按 Ctrl+Enter[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m   4. 心情会根据对话内容变化[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m   5. 所有对话自动保存[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m💡 提示: AI连接可能需要几秒钟时间[0m
+2026-04-05 12:03:30 [[32mℹ️ INFO    [0m] ai_pet: [32m============================================================[0m
+2026-04-05 12:03:31 [[32mℹ️ INFO    [0m] ai_pet: [32m尝试连接AI...[0m
+2026-04-05 12:03:31 [[32mℹ️ INFO    [0m] ai_pet: [32m✅ AI连接成功[0m
+2026-04-05 12:03:46 [[32mℹ️ INFO    [0m] ai_pet: [32m🛑 应用程序正在关闭...[0m
+2026-04-05 12:03:46 [[31m[1m💥 CRITICAL[0m] ai_pet: [31m[1m未捕获的异常: AttributeError | error='MoodManager' object has no attribute 'save_current_mood' traceback=Traceback (most recent call last):
+  File "D:\AI_Pet\ai_pet_mvp\run_app.py", line 250, in on_app_exit
+    mood_manager.save_current_mood()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MoodManager' object has no attribute 'save_current_mood'. Did you mean: 'current_mood'?
+[0m
+2026-04-05 12:03:46 [[32mℹ️ INFO    [0m] ai_pet: [32m应用程序退出，返回码: 0[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m🔍 检查测试环境...[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m检查结果:[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m========================================[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m✅ Python版本                  3.14.3          (要求: 3.8+)[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 目录存在: ai_pet_mvp          存在              (要求: 存在)[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 目录存在: tests               存在              (要求: 存在)[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 目录存在: src                 存在              (要求: 存在)[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 目录存在: data                存在              (要求: 存在)[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 文件存在: requirements.txt    存在              (要求: 存在)[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 文件存在: run_app.py          存在              (要求: 存在)[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 文件存在: conftest.py         存在              (要求: 存在)[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m❌ pytest模块                  未安装             (要求: 已安装)[0m
+2026-04-05 22:23:23 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 虚拟环境                      使用中             (要求: 建议使用)[0m
+2026-04-05 22:23:23 [[33m⚠️ WARNING [0m] test_runner: [33m⚠️  测试环境检查未通过[0m
+2026-04-05 22:23:54 [[32mℹ️ INFO    [0m] test_runner: [32m============================================================[0m
+2026-04-05 22:23:54 [[32mℹ️ INFO    [0m] test_runner: [32m🚀 开始运行测试: all[0m
+2026-04-05 22:23:54 [[32mℹ️ INFO    [0m] test_runner: [32m============================================================[0m
+2026-04-05 22:23:54 [[32mℹ️ INFO    [0m] test_runner: [32m执行命令: D:\AI_Pet\ai_pet_mvp\venv\Scripts\python.exe -m pytest tests/ --tb=short -v --timeout 300 --html D:\AI_Pet\ai_pet_mvp\test_reports\report_20260405_222354.html --self-contained-html --import-mode=append[0m
+2026-04-05 22:23:54 [[31m❌ ERROR   [0m] test_runner: [31m❌ 测试失败[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m🔍 检查测试环境...[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m检查结果:[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m========================================[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m✅ Python版本                  3.14.3          (要求: 3.8+)[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 目录存在: ai_pet_mvp          存在              (要求: 存在)[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 目录存在: tests               存在              (要求: 存在)[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 目录存在: src                 存在              (要求: 存在)[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 目录存在: data                存在              (要求: 存在)[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 文件存在: requirements.txt    存在              (要求: 存在)[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 文件存在: run_app.py          存在              (要求: 存在)[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 文件存在: conftest.py         存在              (要求: 存在)[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m✅ pytest模块                  版本 9.0.2        (要求: 已安装)[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 虚拟环境                      使用中             (要求: 建议使用)[0m
+2026-04-05 22:29:19 [[32mℹ️ INFO    [0m] test_runner: [32m✅ 测试环境检查通过[0m
+2026-04-05 22:29:25 [[32mℹ️ INFO    [0m] test_runner: [32m============================================================[0m
+2026-04-05 22:29:25 [[32mℹ️ INFO    [0m] test_runner: [32m🚀 开始运行测试: all[0m
+2026-04-05 22:29:25 [[32mℹ️ INFO    [0m] test_runner: [32m============================================================[0m
+2026-04-05 22:29:25 [[32mℹ️ INFO    [0m] test_runner: [32m执行命令: D:\AI_Pet\ai_pet_mvp\venv\Scripts\python.exe -m pytest tests/ --tb=short -v --timeout 300 --html D:\AI_Pet\ai_pet_mvp\test_reports\report_20260405_222925.html --self-contained-html --import-mode=append[0m
+2026-04-05 22:29:25 [[31m❌ ERROR   [0m] test_runner: [31m❌ 测试失败[0m
+2026-04-05 22:30:42 [[32mℹ️ INFO    [0m] test_runner: [32m============================================================[0m
+2026-04-05 22:30:42 [[32mℹ️ INFO    [0m] test_runner: [32m🚀 开始运行测试: all[0m
+2026-04-05 22:30:42 [[32mℹ️ INFO    [0m] test_runner: [32m============================================================[0m
+2026-04-05 22:30:42 [[32mℹ️ INFO    [0m] test_runner: [32m执行命令: D:\AI_Pet\ai_pet_mvp\venv\Scripts\python.exe -m pytest tests/ --tb=short -v --timeout 300 --html D:\AI_Pet\ai_pet_mvp\test_reports\report_20260405_223042.html --self-contained-html --import-mode=append[0m
+2026-04-05 22:30:45 [[31m❌ ERROR   [0m] test_runner: [31m❌ 测试失败[0m
+2026-04-05 22:35:22 [[32mℹ️ INFO    [0m] test_runner: [32m============================================================[0m
+2026-04-05 22:35:22 [[32mℹ️ INFO    [0m] test_runner: [32m🚀 开始运行测试: all[0m
+2026-04-05 22:35:22 [[32mℹ️ INFO    [0m] test_runner: [32m============================================================[0m
+2026-04-05 22:35:22 [[32mℹ️ INFO    [0m] test_runner: [32m执行命令: D:\AI_Pet\ai_pet_mvp\venv\Scripts\python.exe -m pytest tests/ --tb=short -v --timeout 300 --html D:\AI_Pet\ai_pet_mvp\test_reports\report_20260405_223522.html --self-contained-html --import-mode=append[0m
+2026-04-05 22:35:27 [[31m❌ ERROR   [0m] test_runner: [31m❌ 测试失败[0m

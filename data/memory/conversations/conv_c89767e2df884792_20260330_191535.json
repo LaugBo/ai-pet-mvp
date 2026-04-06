@@ -1,0 +1,23 @@
+{
+  "conversation_id": "c89767e2df884792",
+  "timestamp": 1774869335.628271,
+  "date": "2026-03-30T19:15:35.628274",
+  "message_count": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "你好，我是测试用户",
+      "timestamp": 1774869335.628142
+    },
+    {
+      "role": "assistant",
+      "content": "你好！我是AI宠物，很高兴认识你！",
+      "timestamp": 1774869335.628143
+    }
+  ],
+  "metadata": {
+    "test": true,
+    "mood": "happy",
+    "source": "memory_system_test"
+  }
+}

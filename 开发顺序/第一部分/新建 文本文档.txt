@@ -1,0 +1,146 @@
+第一阶段：基础骨架 - 开发计划
+
+今日目标
+
+创建完整文件夹结构，让一个空Python程序能运行。
+
+详细步骤（按顺序执行）
+
+第1步：创建根目录
+
+
+ai_pet_mvp/  ← 已存在
+
+
+第2步：创建所有空文件夹
+
+在 ai_pet_mvp/ 内创建：
+
+venv/           ← 已有
+src/
+├── core/
+│   ├── mood/
+│   ├── memory/
+│   └── ai/
+├── ui/
+│   └── assets/
+│       ├── moods/
+│       │   ├── happy/
+│       │   ├── excited/
+│       │   ├── sad/
+│       │   ├── proud/
+│       │   └── confused/
+│       └── icons/
+└── utils/
+data/
+├── memory/
+│   ├── conversations/
+│   ├── summaries/
+│   └── moods/
+└── config/
+tests/
+docs/
+scripts/
+
+
+操作命令（Windows CMD）：
+mkdir src
+mkdir src\core src\core\mood src\core\memory src\core\ai
+mkdir src\ui src\ui\assets src\ui\assets\moods src\ui\assets\icons
+mkdir src\ui\assets\moods\happy src\ui\assets\moods\excited src\ui\assets\moods\sad
+mkdir src\ui\assets\moods\proud src\ui\assets\moods\confused
+mkdir src\utils
+mkdir data data\memory data\memory\conversations data\memory\summaries data\memory\moods
+mkdir data\config
+mkdir tests docs scripts
+
+
+第3步：创建主程序文件
+
+在 ai_pet_mvp/ 根目录创建：
+
+1. main.py - 程序入口
+# 程序主入口
+print("AI宠物启动中...")
+print("程序骨架已就绪！")
+
+
+2. launch.py - 启动脚本
+# 启动脚本
+import main
+print("启动完成！")
+
+
+3. requirements.txt - 依赖列表
+
+# Python依赖包
+# GUI相关
+# requests >= 2.28.0
+
+
+4. README.md - 说明文档
+
+# AI宠物MVP
+一个带心情和记忆的AI对话伴侣
+
+
+第4步：创建初始化文件
+
+在每个Python包目录中创建 __init__.py 空文件：
+
+需要创建的位置：
+
+src/__init__.py
+src/core/__init__.py
+src/core/mood/__init__.py
+src/core/memory/__init__.py
+src/core/ai/__init__.py
+src/ui/__init__.py
+src/utils/__init__.py
+
+
+操作命令：
+echo. > src\__init__.py
+echo. > src\core\__init__.py
+echo. > src\core\mood\__init__.py
+echo. > src\core\memory\__init__.py
+echo. > src\core\ai\__init__.py
+echo. > src\ui\__init__.py
+echo. > src\utils\__init__.py
+
+
+第5步：测试运行
+
+# 进入项目目录
+cd D:\AI_Pet\ai_pet_mvp
+
+# 激活虚拟环境
+venv\Scripts\activate
+
+# 运行程序
+python main.py
+
+
+预期输出：
+
+AI宠物启动中...
+程序骨架已就绪！
+
+
+第一阶段完成标准
+
+✅ 文件夹结构完整
+✅ 能运行 python main.py 看到输出
+✅ 所有 __init__.py 文件就位
+
+预计时间
+
+• 创建文件夹：5分钟
+
+• 创建文件：5分钟
+
+• 测试：2分钟
+
+• 总计：12分钟
+
+完成这些后，您的项目就有了完整骨架，可以开始写实际功能代码了。

@@ -1,0 +1,46 @@
+[
+  {
+    "mood": "happy",
+    "confidence": 1.0,
+    "timestamp": 1774876230.9967043,
+    "duration": 0.0,
+    "triggers": [],
+    "reason": "非常开心",
+    "conversation_id": null,
+    "manager_version": "1.0",
+    "date": "2026-03-30T21:10:30.996705"
+  },
+  {
+    "mood": "confused",
+    "confidence": 0.7352941176470589,
+    "timestamp": 1774876237.5253189,
+    "duration": 0.0,
+    "triggers": [],
+    "reason": "比较困惑",
+    "conversation_id": null,
+    "manager_version": "1.0",
+    "date": "2026-03-30T21:10:37.525320"
+  },
+  {
+    "mood": "happy",
+    "confidence": 1.0,
+    "timestamp": 1774876254.50599,
+    "duration": 0.0,
+    "triggers": [],
+    "reason": "非常开心",
+    "conversation_id": null,
+    "manager_version": "1.0",
+    "date": "2026-03-30T21:10:54.505991"
+  },
+  {
+    "mood": "confused",
+    "confidence": 0.7692307692307692,
+    "timestamp": 1774876259.5449271,
+    "duration": 0.0,
+    "triggers": [],
+    "reason": "比较困惑",
+    "conversation_id": null,
+    "manager_version": "1.0",
+    "date": "2026-03-30T21:10:59.544928"
+  }
+]

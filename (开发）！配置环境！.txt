@@ -1,0 +1,5 @@
+CMD
+切换文件目录cd /d D:\AI_Pet\ai_pet_mvp
+测试是否切换dir
+创建虚拟环境python -m venv venv
+激活虚拟环境venv\Scripts\activate

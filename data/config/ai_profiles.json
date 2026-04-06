@@ -1,0 +1,91 @@
+{
+  "version": "1.0",
+  "description": "AI连接配置档案",
+  "active_profile": "my_ollama",
+  
+  "profiles": {
+    "my_ollama": {
+      "name": "我的Ollama",
+      "description": "直接连接到我局域网中的Ollama服务器",
+      "enabled": true,
+      "type": "ollama",
+      "base_url": "http://192.168.1.13:11434",
+      "api_endpoint": "/api/generate",
+      "api_key": "",
+      "model": "my-qwen:latest",
+      "timeout": 60,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "parameters": {
+        "stream": false
+      },
+      "connection": {
+        "auto_connect": true,
+        "retry_times": 3,
+        "retry_delay": 2
+      }
+    },
+    
+    "local_ollama": {
+      "name": "本地Ollama",
+      "description": "连接到本机的Ollama服务",
+      "enabled": true,
+      "type": "ollama",
+      "base_url": "http://127.0.0.1:11434",
+      "api_endpoint": "/api/generate",
+      "api_key": "",
+      "model": "my-qwen:latest",
+      "timeout": 30,
+      "headers": {},
+      "parameters": {
+        "stream": false
+      },
+      "connection": {
+        "auto_connect": false,
+        "retry_times": 2,
+        "retry_delay": 1
+      }
+    },
+    
+    "fast_response": {
+      "name": "快速响应",
+      "description": "快速响应的小模型配置",
+      "enabled": true,
+      "type": "ollama",
+      "base_url": "http://127.0.0.1:11434",
+      "api_endpoint": "/api/generate",
+      "api_key": "",
+      "model": "phi3",
+      "timeout": 20,
+      "headers": {},
+      "parameters": {
+        "stream": false
+      },
+      "connection": {
+        "auto_connect": false,
+        "retry_times": 1,
+        "retry_delay": 0
+      }
+    }
+  },
+  
+  "default_parameters": {
+    "ollama": {
+      "model": "my-qwen:latest",
+      "prompt": "",
+      "stream": false,
+      "options": {
+        "num_predict": 1000,
+        "temperature": 0.7
+      }
+    }
+  },
+  
+  "connection_settings": {
+    "enable_logging": true,
+    "log_file": "data/memory/ai_connection.log",
+    "max_log_size": 10485760,
+    "backup_logs": true
+  }
+}

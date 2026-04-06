@@ -1,0 +1,18 @@
+ai_pet_mvp/
+
+├── src/              # 源代码
+
+├── data/             # 数据存储
+
+├── tests/            # 测试文件
+
+├── docs/             # 文档
+
+├── venv/             # 虚拟环境
+
+├── main.py          # 主程序
+
+├── launch.py        # 启动脚本
+
+└── requirements.txt # 依赖包
+——————run_app.py #启动程序

@@ -1,0 +1,118 @@
+{
+  "version": "1.0",
+  "description": "AI心情分析规则配置",
+  "last_updated": "2026-01-01",
+  
+  "moods": {
+    "happy": {
+      "display_name": "开心",
+      "description": "积极、愉快的情绪状态",
+      "trigger_type": "keyword",
+      "keywords": [
+        "开心", "高兴", "快乐", "愉快", "欢乐", 
+        "哈哈", "呵呵", "嘻嘻", "太好啦", "棒极了",
+        "爱你", "喜欢", "爱", "幸福", "满足"
+      ],
+      "negative_keywords": [
+        "不", "没", "别", "勿", "否"
+      ],
+      "priority": 1,
+      "default_image": "happy/default.png",
+      "color": "#FFD700",
+      "sound_effect": null
+    },
+    
+    "excited": {
+      "display_name": "兴奋",
+      "description": "激动、兴奋的情绪状态",
+      "trigger_type": "keyword",
+      "keywords": [
+        "兴奋", "激动", "惊喜", "惊喜", "震惊",
+        "哇", "喔", "天啊", "太棒了", "厉害",
+        "成功", "胜利", "赢", "冠军", "第一"
+      ],
+      "negative_keywords": [
+        "不", "没", "别", "失败", "输"
+      ],
+      "priority": 2,
+      "default_image": "excited/default.png",
+      "color": "#FF4500",
+      "sound_effect": "excited.mp3"
+    },
+    
+    "sad": {
+      "display_name": "低落",
+      "description": "悲伤、低落的情绪状态",
+      "trigger_type": "keyword",
+      "keywords": [
+        "难过", "伤心", "悲伤", "哭", "泪",
+        "唉", "唉声叹气", "失望", "失落", "痛苦",
+        "孤独", "寂寞", "想念", "想家", "分手"
+      ],
+      "negative_keywords": [
+        "不", "没", "快乐", "开心"
+      ],
+      "priority": 3,
+      "default_image": "sad/default.png",
+      "color": "#1E90FF",
+      "sound_effect": "sad.mp3"
+    },
+    
+    "proud": {
+      "display_name": "自豪",
+      "description": "骄傲、自豪的情绪状态",
+      "trigger_type": "keyword",
+      "keywords": [
+        "自豪", "骄傲", "成就", "优秀", "成功",
+        "完美", "厉害", "出色", "超棒", "天才",
+        "冠军", "金牌", "荣誉", "获奖", "表扬"
+      ],
+      "negative_keywords": [
+        "不", "没", "失败", "差劲"
+      ],
+      "priority": 4,
+      "default_image": "proud/default.png",
+      "color": "#32CD32",
+      "sound_effect": "proud.mp3"
+    },
+    
+    "confused": {
+      "display_name": "困惑",
+      "description": "疑惑、困惑的情绪状态",
+      "trigger_type": "keyword",
+      "keywords": [
+        "困惑", "疑惑", "不明白", "不懂", "为什么",
+        "怎么", "如何", "什么", "哪里", "谁",
+        "?", "？", "疑问", "问题", "不确定"
+      ],
+      "negative_keywords": [
+        "明白", "知道", "清楚", "确定"
+      ],
+      "priority": 5,
+      "default_image": "confused/default.png",
+      "color": "#9370DB",
+      "sound_effect": null
+    }
+  },
+  
+  "rules": {
+    "analysis_method": "keyword_match",
+    "keyword_weight": 1.0,
+    "context_weight": 0.3,
+    "history_weight": 0.2,
+    "default_mood": "happy",
+    "mood_change_threshold": 0.6,
+    "mood_persistence": 5,
+    "enable_ai_analysis": true,
+    "ai_analysis_prompt": "请分析以下文本表达的情绪，从'开心','兴奋','低落','自豪','困惑'中选择一个最匹配的情绪: {text}"
+  },
+  
+  "display": {
+    "mood_duration": 5,
+    "transition_speed": 0.5,
+    "show_mood_name": true,
+    "show_mood_icon": true,
+    "animation_enabled": true,
+    "sound_enabled": false
+  }
+}

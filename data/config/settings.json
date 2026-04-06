@@ -1,0 +1,56 @@
+{
+  "app": {
+    "name": "AI宠物MVP (Ollama版)",
+    "version": "1.0.0",
+    "description": "一个带心情和记忆的AI对话伴侣 - 直接连接Ollama",
+    "debug": false,
+    "log_level": "INFO"
+  },
+  "ui": {
+    "theme": "light",
+    "language": "zh-CN",
+    "window_width": 900,
+    "window_height": 700,
+    "font_family": "Microsoft YaHei",
+    "font_size": 11,
+    "show_mood_display": true,
+    "show_memory_info": true
+  },
+  "ai": {
+    "adapter_type": "ollama",
+    "active_profile": "my_ollama",
+    "default_model": "my-qwen:latest",
+    "timeout": 60,
+    "max_response_length": 1000
+  },
+  "memory": {
+    "max_conversation_history": 50,
+    "auto_summarize": true,
+    "summary_interval": 10,
+    "save_path": "data/memory/conversations",
+    "summary_path": "data/memory/summaries",
+    "backup_enabled": true,
+    "backup_interval": 3600
+  },
+  "mood": {
+    "enabled": true,
+    "moods": ["happy", "excited", "sad", "proud", "confused"],
+    "default_mood": "happy",
+    "auto_analyze": true,
+    "mood_images_path": "src/ui/assets/moods",
+    "change_animation": true
+  },
+  "paths": {
+    "config_dir": "data/config",
+    "memory_dir": "data/memory",
+    "assets_dir": "src/ui/assets",
+    "logs_dir": "logs"
+  },
+  "network": {
+    "enable_local_scan": true,
+    "scan_range": "192.168.1.1-254",
+    "connection_timeout": 10,
+    "retry_times": 3,
+    "retry_delay": 2
+  }
+}
