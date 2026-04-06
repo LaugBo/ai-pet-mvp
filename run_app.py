@@ -96,7 +96,7 @@ def main():
                     logger.info(f"✅ 使用AI配置: {profile.get('name')}")
                     
                     # 构建AI配置
-                    base_url = profile.get("base_url", "http://192.168.1.13:11434")
+                    base_url = profile.get("base_url", "http://localhost:11434")
                     if "://" in base_url:
                         address = base_url.split("://")[1]
                         ip = address.split(":")[0]
@@ -121,7 +121,7 @@ def main():
                     logger.warning("⚠️ 使用默认AI配置")
                     ai_config = {
                         "adapter_type": "ollama",
-                        "ip": "192.168.1.13",
+                        "ip": "localhost",
                         "port": 11434,
                         "model": "my-qwen:latest"
                     }
@@ -130,7 +130,7 @@ def main():
                 logger.warning(f"读取AI配置失败，使用默认配置: {e}")
                 ai_config = {
                     "adapter_type": "ollama",
-                    "ip": "192.168.1.13",
+                    "ip": "localhost",
                     "port": 11434,
                     "model": "my-qwen:latest"
                 }
@@ -138,7 +138,7 @@ def main():
             logger.warning("⚠️ 无配置管理器，使用硬编码AI配置")
             ai_config = {
                 "adapter_type": "ollama",
-                "ip": "192.168.1.13",
+                "ip": "localhost",
                 "port": 11434,
                 "model": "my-qwen:latest"
             }

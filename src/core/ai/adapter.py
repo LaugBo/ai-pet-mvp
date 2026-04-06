@@ -312,7 +312,7 @@ if __name__ == "__main__":
     # 配置
     config = {
         "adapter_type": "ollama",
-        "ip": "192.168.1.13",  # 您的AI主机IP
+        "ip": "localhost",  # 您的AI主机IP
         "port": 11434,
         "model": "my-qwen:latest"
     }

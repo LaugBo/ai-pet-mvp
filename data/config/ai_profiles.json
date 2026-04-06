@@ -9,7 +9,7 @@
       "description": "直接连接到我局域网中的Ollama服务器",
       "enabled": true,
       "type": "ollama",
-      "base_url": "http://192.168.1.13:11434",
+      "base_url": "http://localhost:11434",
       "api_endpoint": "/api/generate",
       "api_key": "",
       "model": "my-qwen:latest",

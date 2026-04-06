@@ -29,11 +29,11 @@ class TestOllamaConnector:
     
     def test_generate_url(self):
         """测试URL生成"""
-        connector = OllamaConnector(ip="192.168.1.100", port=8080, model="test")
+        connector = OllamaConnector(ip="localhost", port=8080, model="test")
         
-        assert connector.base_url == "http://192.168.1.100:8080"
-        assert connector.generate_url == "http://192.168.1.100:8080/api/generate"
-        assert connector.models_url == "http://192.168.1.100:8080/api/tags"
+        assert connector.base_url == "http://localhost:8080"
+        assert connector.generate_url == "http://localhost:8080/api/generate"
+        assert connector.models_url == "http://localhost:8080/api/tags"
     
     @patch('requests.post')
     def test_generate_success(self, mock_post):

@@ -200,7 +200,7 @@ if __name__ == "__main__":
     print("=" * 50)
     
     webui_connector = LocalNetworkConnector(
-        ip_address="192.168.1.13",  # 您的AI主机IP
+        ip_address="localhost",  # 您的AI主机IP
         port=8080,
         ai_type="openwebui"
     )
